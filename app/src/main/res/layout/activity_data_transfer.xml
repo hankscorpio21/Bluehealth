@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.bluehealth.DataTransfer">
+
+    <Button
+        android:id="@+id/bluetoothMenu"
+        android:onClick="bluetoothMenuView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:text="Return to bluetooth device menu">
+    </Button>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incoming Data"
+        android:id="@+id/dataTitle"
+        android:layout_below="@id/bluetoothMenu">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/dataStream"
+        android:layout_below="@+id/dataTitle">
+    </TextView>
+
+    <TextView
+        android:id="@+id/xValueView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="200dp"
+        android:text="X-Value = ????"
+         />
+
+
+    <TextView
+        android:id="@+id/yValueView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xValueView"
+        android:layout_centerHorizontal="true"
+        android:text="X-Value = ????"
+        />
+
+    <TextView
+        android:id="@+id/zValueView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yValueView"
+        android:layout_centerHorizontal="true"
+        android:text="Y-Value = ????"
+         />
+
+    <TextView
+        android:id="@+id/tempView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zValueView"
+        android:layout_centerHorizontal="true"
+        android:text="Temperature-Value = ????"
+         />
+
+
+
+
+</RelativeLayout>

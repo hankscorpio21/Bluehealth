@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.bluehealth.BT_Connect">
+
+    <Button
+        android:id="@+id/turnOnButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:text="Turn Bluetooth On">
+
+    </Button>
+
+    <Button
+        android:id="@+id/turnOffButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/turnOnButton"
+        android:text="Turn Bluetooth Off">
+
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paired Devices"
+        android:id="@+id/pairedDevices"
+        android:layout_below="@id/turnOffButton">
+    </TextView>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_below="@+id/pairedDevices">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/disconnectButton"
+        android:onClick="disconnectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="Disconnect Device">
+    </Button>
+
+    <Button
+        android:id="@+id/dataViewButton"
+        android:onClick="dataTransferView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@id/disconnectButton"
+        android:layout_centerHorizontal="true"
+        android:text="Go to Data View page">
+    </Button>
+
+</RelativeLayout>
