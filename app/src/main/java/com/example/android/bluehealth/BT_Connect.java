@@ -39,6 +39,7 @@ public class BT_Connect extends AppCompatActivity {
 
 
     //onCreate: initialise
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
